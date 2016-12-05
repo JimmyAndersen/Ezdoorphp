@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="style/StylesheetDoors.css">
+<head><style type="text/css">
+        a.nounderline {text-decoration: none; }
+    </style>
+</head>
+<h1>
+    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a> <br>
+    <font style="color: purple">Doors</font>
+</h1>
+
+
+<body bgcolor="blue"> <br><br> <br>
+<div id="DoorArray">
+    <left style="color: coral"> All Doors:</left>
+    <table border="1px">
+        <tr>
+            <th>All Doors:</th>
+        </tr>
+        {% for p in text %}
+            <tr>
+                <td>{{ p.DoorId }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div id="AddDoor"> Here you can add a door, with a new id:
+    <form action="http://localhost/Ezdoor/Doors.php" method="post"> <br><br><br><br><br><br><br><br>
+        Door id: <input type="text" name="Add door"> <br><br><br><br>
+        <input type="text" name="DoorAdd">
+        <input type="submit" value="Add Door">
+    </form>
+</div>
+
+<div id="DeleteDoor"> Here you can delete a door from the database, by typing its id(number): <br><br><br><br><br><br><br><br>
+    <form action="http://localhost/Ezdoor/Doors.php" method="post">
+        Delete door by id: <input type="text" name="Delete"> <br><br><br><br>
+
+
+        <input type="submit" value="Delete Door">
+    </form>
+</div>
+
+<div id="EditDoor"> You can edit the number of the door here. Simply type your old door number and set in the new door number below: <br><br><br><br>
+    <form action="http://localhost/Ezdoor/Doors.php" method="post">
+        Old number: <input type="text" name="Oldnr"><br><br><br>
+        New number: <input type="text" name="Newnr"> <br><br><br><br><br>
+
+        <input type="submit" value="Edit Door">
+    </form>
+</div>
+</body>

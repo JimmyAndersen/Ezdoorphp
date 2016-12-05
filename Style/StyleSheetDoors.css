@@ -1,0 +1,24 @@
+#DoorArray{
+    background-color: pink;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#AddDoor{
+    background-color: green;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#DeleteDoor{
+    background-color: darkgray;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#EditDoor{
+    background-color: red;
+    float: left;
+    width: 25%;
+    height: 300px;
+}

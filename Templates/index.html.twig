@@ -1,0 +1,75 @@
+<link rel="stylesheet" href="style/StylesheetFP.css.twig" xmlns="http://www.w3.org/1999/html">
+<title>Ezdoor</title>
+
+
+<head><style type="text/css">
+        a.nounderline {text-decoration: none; }
+    </style></head>
+<body>
+
+<h1>
+    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a> &ensp;&ensp;&ensp;&ensp; &ensp; &ensp;
+
+    <a style="color: white" href="http://localhost/Ezdoor/Card.php?" class="nounderline">Cards</a> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+    <a style="color: white" href="http://localhost/Ezdoor/Doors.php?" class="nounderline">Doors</a> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+
+    <a style="color: white" href="http://localhost/Ezdoor/Access.php?" class="nounderline">Access</a>
+
+    <img src="images/logo2.png" >
+
+</h1>
+
+<div id="divcontainer">
+
+    <div id="div1">
+        <table border="1px">
+            <tr>
+                <th>Door ID</th>
+                <th>Card ID</th>
+                <th>Date and time</th>
+                <th>Access</th>
+            </tr>
+            {% for p in text %}
+                <tr>
+                    <td>{{ p.DoorId }}</td>
+                    <td>{{ p.CardId }}</td>
+                    <td>{{ p.DateTime }}</td>
+                    <td>{{ p.Access }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+    <div id="div2">
+
+        <form action="CardsSearch.asp">
+            Cards: <input type="text" name="Cards"><br>
+        </form>
+
+        <form action="DoorsSearch.asp">
+            Doors: <input type="text" name="Doors"><br>
+        </form>
+
+        <table border="1px">
+            <tr>
+                <th>Door ID</th>
+                <th>Card ID</th>
+                <th>Date and time</th>
+                <th>Access</th>
+            </tr>
+            {% for p in text %}
+                <tr>
+                    <td>{{ p.DoorId }}</td>
+                    <td>{{ p.CardId }}</td>
+                    <td>{{ p.DateTime }}</td>
+                    <td>{{ p.Access }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+
+
+    </div>
+</div>
+
+</body>

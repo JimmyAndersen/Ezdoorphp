@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="style/StylesheetCard.css">
+<head><style type="text/css">
+        a.nounderline {text-decoration: none; }
+    </style>
+</head>
+
+<h1>
+
+    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a> <br>
+    <font style="color: purple">Cards</font>
+
+</h1>
+
+
+
+<body bgcolor="blue"> <br><br> <br>
+
+<div id="CardArray">
+    <left style="color: coral"> All Cards:</left>
+    <table border="1px">
+        <tr>
+            <th>Card ID</th>
+        </tr>
+        {% for p in text %}
+            <tr>
+                <td>{{ p.CardId }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div id="AddCard">
+    <form action="http://localhost/Ezdoor/Card.php" method="post">
+        <input type="text" name="CardAdd" value="">
+        <input type="submit" value="Add Card">
+
+    </form>
+</div>
+
+<div id="DeleteCard">
+    <form action="http://localhost/Ezdoor/Card.php" method="post">
+
+        <input type="text" name="Delete">
+        <input type="submit" value="Delete Card">
+    </form>
+</div>
+
+<div id="EditCard">
+    <form action="http://localhost/Ezdoor/Card.php" method="post">
+        Old number: <input type="text" name="OldCardnr"><br><br><br>
+        New number: <input type="text" name="NewCardnr"> <br><br><br><br><br>
+
+        <input type="submit" value="Edit Door">
+    </form>
+</div>
+</body>

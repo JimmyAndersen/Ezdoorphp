@@ -1,0 +1,24 @@
+#CardArray{
+    background-color: pink;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#AddCard{
+    background-color: green;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#deletecard{
+    background-color: darkgray;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
+#editcard{
+    background-color: red;
+    float: left;
+    width: 25%;
+    height: 300px;
+}
