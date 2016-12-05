@@ -1,3 +1,6 @@
+body{
+    background-color: #8F8F8F;
+}
 h1{
     background-color: #4F4F4F;
     margin-top: -9px;
@@ -5,32 +8,23 @@ h1{
     font-size: 50px;
     padding-bottom: 50px;
 }
-body{
-    background-color: #8F8F8F;
-}
-#DoorArray{
+#AccessListArray{
     float: left;
-    width: 12%;
+    width: 500px;
     height: 300px;
 }
-#AddDoor{
+#AddAccess{
     float: left;
     text-align: center;
     width: 25%;
     height: 300px;
 }
-#DeleteDoor{
-    float: left;
-    text-align: center;
-    width: 20%;
-    height: 300px;
-    margin-right: 75px;
-}
-#EditDoor{
+#Deactivate{
     float: left;
     text-align: center;
     width: 25%;
     height: 300px;
+
 }
 img {
     opacity: 1;

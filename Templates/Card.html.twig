@@ -5,18 +5,16 @@
 </head>
 
 <h1>
-
-    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a> <br>
-    <font style="color: purple">Cards</font>
-
+    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a>
+    <img src="images/logo2.png" >
 </h1>
 
 
 
-<body bgcolor="blue"> <br><br> <br>
 
+<br><br><br><br><br>
 <div id="CardArray">
-    <left style="color: coral"> All Cards:</left>
+    <left> All Cards:</left>
     <table border="1px">
         <tr>
             <th>Card ID</th>
@@ -31,7 +29,8 @@
 
 <div id="AddCard">
     <form action="http://localhost/Ezdoor/Card.php" method="post">
-        <input type="text" name="CardAdd" value="">
+        <br><br><br>
+        Add a CardID: <input type="text" name="CardAdd" value=""><br><br><br>
         <input type="submit" value="Add Card">
 
     </form>
@@ -39,8 +38,8 @@
 
 <div id="DeleteCard">
     <form action="http://localhost/Ezdoor/Card.php" method="post">
-
-        <input type="text" name="Delete">
+        <br><br><br>
+        Delete CardID: <input type="text" name="Delete"><br><br><br>
         <input type="submit" value="Delete Card">
     </form>
 </div>
@@ -48,9 +47,8 @@
 <div id="EditCard">
     <form action="http://localhost/Ezdoor/Card.php" method="post">
         Old number: <input type="text" name="OldCardnr"><br><br><br>
-        New number: <input type="text" name="NewCardnr"> <br><br><br><br><br>
+        New number: <input type="text" name="NewCardnr"> <br><br><br>
 
         <input type="submit" value="Edit Door">
     </form>
 </div>
-</body>

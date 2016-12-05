@@ -1,24 +1,42 @@
+body{
+    background-color: #8F8F8F;
+}
+h1{
+    background-color: #4F4F4F;
+    margin-top: -9px;
+    margin-left: -8px;
+    font-size: 50px;
+    padding-bottom: 50px;
+}
 #CardArray{
-    background-color: pink;
     float: left;
-    width: 25%;
+    width: 250px;
     height: 300px;
 }
 #AddCard{
-    background-color: green;
     float: left;
+    text-align: center;
     width: 25%;
     height: 300px;
+
 }
 #deletecard{
-    background-color: darkgray;
     float: left;
+    text-align: center;
     width: 25%;
     height: 300px;
 }
 #editcard{
-    background-color: red;
     float: left;
+    text-align: center;
     width: 25%;
     height: 300px;
+}
+img {
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right:0px;
+    width: 250px;
+    height: 13.5%;
 }

@@ -4,14 +4,14 @@
     </style>
 </head>
 <h1>
-    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a> <br>
-    <font style="color: purple">Doors</font>
+    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a>
+    <img src="images/logo2.png" >
 </h1>
 
 
 <body bgcolor="blue"> <br><br> <br>
 <div id="DoorArray">
-    <left style="color: coral"> All Doors:</left>
+    <left style="color: #000000"> All Doors:</left>
     <table border="1px">
         <tr>
             <th>All Doors:</th>
@@ -26,8 +26,9 @@
 
 <div id="AddDoor"> Here you can add a door, with a new id:
     <form action="http://localhost/Ezdoor/Doors.php" method="post"> <br><br><br><br><br><br><br><br>
-        Door id: <input type="text" name="Add door"> <br><br><br><br>
-        <input type="text" name="DoorAdd">
+        Delete door by id:<input type="text" name="DoorAdd"> <br><br><br><br>
+
+
         <input type="submit" value="Add Door">
     </form>
 </div>
@@ -43,8 +44,8 @@
 
 <div id="EditDoor"> You can edit the number of the door here. Simply type your old door number and set in the new door number below: <br><br><br><br>
     <form action="http://localhost/Ezdoor/Doors.php" method="post">
-        Old number: <input type="text" name="Oldnr"><br><br><br>
-        New number: <input type="text" name="Newnr"> <br><br><br><br><br>
+        Old number: <input type="text" name="Oldnr"><br><br><br><br>
+        New number: <input type="text" name="Newnr"> <br><br><br><br>
 
         <input type="submit" value="Edit Door">
     </form>

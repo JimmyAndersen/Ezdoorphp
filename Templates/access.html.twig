@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="style/StylesheetAccess.css">
+<head><style type="text/css">
+        a.nounderline {text-decoration: none; }
+    </style>
+</head>
+
+<h1>
+    <a style="color: white" href="http://localhost/ezdoor/" class="nounderline">Home</a>
+    <img src="images/logo2.png" >
+</h1>
+
+<br><br><br><br><br>
+<div id="AccessListArray">
+    <left> All Door accesses</left>
+    <table border="1px">
+        <tr>
+            <th>Access List</th>
+        </tr>
+        {% for p in text %}
+            <tr>
+                <td>{{ p.AccessList }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+</div>
+
+<div id="AddAccess">
+    <form action="http://localhost/Ezdoor/Access.php" method="post">
+        DoorID: <input type="text" name="DoorID"><br><br><br>
+        CardID: <input type="text" name="CardID"> <br><br><br>
+
+        <input type="submit" value="Add Access">
+    </form>
+</div>
+
+<div id="Deactivate">
+    <form action="http://localhost/Ezdoor/Access.php" method="post">
+        <br><br><br>
+        Deactivate a card access: <input type="text" name="Deactivate" value=""><br><br><br>
+        <input type="submit" value="Deactivate">
+
+    </form>
+</div>
