@@ -43,12 +43,16 @@
 
     <div id="div2">
 
-        <form action="CardsSearch.asp">
-            Cards: <input type="text" name="Cards"><br>
+        <form action="http://localhost/Ezdoor/index.php" method="post">
+            Cards: <input type="text" name="z"><br>
+            <input type="submit" value="heheheh">
+
+
         </form>
 
-        <form action="DoorsSearch.asp">
-            Doors: <input type="text" name="Doors"><br>
+        <form action="http://localhost/Ezdoor/index.php" method="post">
+            Doors: <input type="text" name="x"><br>
+            <input type="submit" value="hehehkeh">
         </form>
 
         <table border="1px">
@@ -58,7 +62,7 @@
                 <th>Date and time</th>
                 <th>Access</th>
             </tr>
-            {% for p in text %}
+            {% for p in door %}
                 <tr>
                     <td>{{ p.DoorId }}</td>
                     <td>{{ p.CardId }}</td>

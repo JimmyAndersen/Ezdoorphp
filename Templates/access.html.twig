@@ -14,11 +14,13 @@
     <left> All Door accesses</left>
     <table border="1px">
         <tr>
-            <th>Access List</th>
+            <th>Door ID</th>
+            <th>Card ID</th>
         </tr>
         {% for p in text %}
             <tr>
-                <td>{{ p.AccessList }}</td>
+                <td>{{ p.DoorId }}</td>
+                <td>{{ p.CardId }}</td>
             </tr>
         {% endfor %}
     </table>
@@ -26,8 +28,8 @@
 
 <div id="AddAccess">
     <form action="http://localhost/Ezdoor/Access.php" method="post">
-        DoorID: <input type="text" name="DoorID"><br><br><br>
-        CardID: <input type="text" name="CardID"> <br><br><br>
+        DoorID: <input type="text" name="d"><br><br><br>
+        CardID: <input type="text" name="c"> <br><br><br>
 
         <input type="submit" value="Add Access">
     </form>
@@ -36,7 +38,7 @@
 <div id="Deactivate">
     <form action="http://localhost/Ezdoor/Access.php" method="post">
         <br><br><br>
-        Deactivate a card access: <input type="text" name="Deactivate" value=""><br><br><br>
+        Deactivate a card access: <input type="text" name="AccessDelete" value=""><br><br><br>
         <input type="submit" value="Deactivate">
 
     </form>
